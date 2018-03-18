@@ -7,13 +7,15 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 public class Chamado implements Serializable {
+	
+	
 	private static final long serialVersionUID = 1L;
 	
 	@NotNull(message="O id não pode estar vazio")
 	@Min(value=1, message="O id não pode ser nulo")
 	private int id_chamado;
 	@NotNull
-	private String descricao, status; 
+	private String descricao, status, teste; 
 	private Date dataAbertura, dataFechamento;
 	private Fila fila;
 	public int getId_chamado() {
